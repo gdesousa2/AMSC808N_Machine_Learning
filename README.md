@@ -16,3 +16,8 @@ Project divided in four parts:
 3) Testing Subsample Inexact Newton Method
 
 4) Stochastic L-BFGS method
+
+
+
+How to run?
+For each part run Project1main_pt{1,2,3,4}, eg. Project1main_pt3 for Part3.

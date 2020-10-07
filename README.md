@@ -20,4 +20,4 @@ Project divided in four parts:
 
 
 How to run?
-For each part run Project1main_pt{1,2,3,4}, eg. Project1main_pt3 for Part3.
+For each part run Project1main_pt{1,2,3,4}.m, eg. Project1main_pt3 for Part3.

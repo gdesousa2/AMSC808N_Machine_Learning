@@ -370,9 +370,9 @@ legend();
 figure;
 hold on;
 grid;
-plot(runtime)
+plot(runtime,'^')
 set(gca,'Fontsize',fsz);
-xlabel('bsz','Fontsize',fsz);
+xlabel('strategies','Fontsize',fsz);
 xticks([1 2 3 4 5 6 7]);
 xticklabels({'\alpha = 0.1'; '\alpha = 0.3'; '\alpha = 0.5'; '\gamma = 0.5'; '\gamma = 1'; '\gamma = 2'; 'ls'});
 ylabel('runtime (s)','Fontsize',fsz);
@@ -391,16 +391,16 @@ t1 = tic;
 [wLB1,fLB1,gnormLB1] = SG_st1(@(w)fun0((1:n)',Y,w,lam(1)),@(I,Y,w)gfun0(I,Y,w,lam(1)),Y,bsz(1),w0,samp,step);
 t1 = toc(t1);
 t2 = tic;
-[wLB2,fLB2,gnormLB2] = SG_st1(@(w)fun0((1:n)',Y,w,lam(2)),@(I,Y,w)gfun0(I,Y,w,lam(1)),Y,bsz(1),w0,samp,step);
+[wLB2,fLB2,gnormLB2] = SG_st1(@(w)fun0((1:n)',Y,w,lam(2)),@(I,Y,w)gfun0(I,Y,w,lam(2)),Y,bsz(1),w0,samp,step);
 t2 = toc(t2);
 t3 = tic;
-[wLB3,fLB3,gnormLB3] = SG_st1(@(w)fun0((1:n)',Y,w,lam(3)),@(I,Y,w)gfun0(I,Y,w,lam(1)),Y,bsz(1),w0,samp,step);
+[wLB3,fLB3,gnormLB3] = SG_st1(@(w)fun0((1:n)',Y,w,lam(3)),@(I,Y,w)gfun0(I,Y,w,lam(3)),Y,bsz(1),w0,samp,step);
 t3 = toc(t3);
 t4 = tic;
-[wLB4,fLB4,gnormLB4] = SG_st1(@(w)fun0((1:n)',Y,w,lam(4)),@(I,Y,w)gfun0(I,Y,w,lam(1)),Y,bsz(1),w0,samp,step);
+[wLB4,fLB4,gnormLB4] = SG_st1(@(w)fun0((1:n)',Y,w,lam(4)),@(I,Y,w)gfun0(I,Y,w,lam(4)),Y,bsz(1),w0,samp,step);
 t4 = toc(t4);
 t5 = tic;
-[wLB5,fLB5,gnormLB5] = SG_st1(@(w)fun0((1:n)',Y,w,lam(5)),@(I,Y,w)gfun0(I,Y,w,lam(1)),Y,bsz(1),w0,samp,step);
+[wLB5,fLB5,gnormLB5] = SG_st1(@(w)fun0((1:n)',Y,w,lam(5)),@(I,Y,w)gfun0(I,Y,w,lam(5)),Y,bsz(1),w0,samp,step);
 t5 = toc(t5);
 
 runtime = [t1; t2; t3; t4; t5]; % run time for different batch sizes

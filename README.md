@@ -1,4 +1,6 @@
 # AMSC808N_Project1
+University of Maryland, Fall 2020
+
 Project1 for AMSC808N - Machine Learning &amp; Data Science class
 
 Data visualization and separation using various methods (SINewton, SG, ASM, etc).
